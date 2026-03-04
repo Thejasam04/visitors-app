@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -27,7 +27,7 @@ jobs:
             --document-name "AWS-RunShellScript" \
             --parameters commands='[
               "cd /home/ssm-user/visitors-app",
-              "git pull origin master",
+              "git pull origin main",
               "cd backend && npm install",
               "sudo systemctl restart nodeapp"
             ]'
