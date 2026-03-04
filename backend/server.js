@@ -15,6 +15,8 @@ const hostsRouter    = require('./routes/hosts');
 console.log('✅ hosts router loaded');
 const approvalRouter = require('./routes/approval');
 console.log('✅ approval router loaded');
+const adminRouter = require('./routes/admin');
+console.log('✅ admin router loaded');
 
 const app  = express();
 const PORT = process.env.PORT || 3000;
@@ -28,6 +30,7 @@ app.use('/api/auth',     authRouter);
 app.use('/api/visitors', visitorsRouter);
 app.use('/api/hosts',    hostsRouter);
 app.use('/api/approval', approvalRouter);
+app.use('/api/admin', adminRouter);
 console.log('✅ All routes registered successfully');
 
 // Health check
