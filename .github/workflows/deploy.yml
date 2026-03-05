@@ -41,4 +41,3 @@ jobs:
             --instance-id ${{ secrets.EC2_INSTANCE_ID }} \
             --query "StandardOutputContent" \
             --output text
-            echo " " >> README.md
