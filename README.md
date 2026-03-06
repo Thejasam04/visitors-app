@@ -12,9 +12,9 @@ VisitorPass is a production-grade visitor management platform that digitizes the
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
-### 3-Tier AWS Architecture
+                                  ### 3-Tier AWS Architecture
 
 ```
                           ┌─────────────────────────────────────────┐
@@ -139,35 +139,35 @@ git push origin main
 
 ### Why SSM instead of SSH?
 
-- ✅ No SSH key management
-- ✅ No port 22 open on EC2
-- ✅ Audit trail via AWS CloudTrail
-- ✅ IAM-based access control
+- No SSH key management
+- No port 22 open on EC2
+- Audit trail via AWS CloudTrail
+- IAM-based access control
 
 ---
 
-## ✨ Features
+##Features
 
 ### Visitor Side
-- 📝 Submit visit requests with photo upload
-- 📧 Receive QR-coded digital pass via email on approval
-- 📊 Personal dashboard — track all visits and statuses
-- 🎫 View and share digital visitor pass
+-  Submit visit requests with photo upload
+-  Receive QR-coded digital pass via email on approval
+-  Personal dashboard — track all visits and statuses
+-  View and share digital visitor pass
 
 ### Host Side
-- 📬 Email notification on new visit request
-- ✅ Approve with custom time window (start → end time)
-- ❌ Reject with automatic visitor notification
+-  Email notification on new visit request
+-  Approve with custom time window (start → end time)
+-  Reject with automatic visitor notification
 
 ### Admin Panel
-- 📊 Real-time dashboard — total visitors, pending, checked-in
-- 👥 All Visitors — search, filter by status/date, approve/reject inline
-- 🏠 Hosts Management — full CRUD with department management
-- 📈 Reports — visitors by date (bar chart), status (donut), host (bar), CSV export
+-  Real-time dashboard — total visitors, pending, checked-in
+-  All Visitors — search, filter by status/date, approve/reject inline
+-  Hosts Management — full CRUD with department management
+-  Reports — visitors by date (bar chart), status (donut), host (bar), CSV export
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 | Tech | Usage |
@@ -204,7 +204,7 @@ git push origin main
 
 ---
 
-## 📁 Project Structure
+##Project Structure
 
 ```
 visitors-app/
@@ -243,7 +243,7 @@ visitors-app/
 
 ---
 
-## 🔄 Key Flows
+## Key Flows
 
 ### Visitor Approval Flow
 ```
@@ -274,7 +274,7 @@ Email sent to Host (approve/reject links)
 
 ---
 
-## 🏃 Local Setup
+##Local Setup
 
 ### Prerequisites
 - Node.js 18+
@@ -317,33 +317,14 @@ S3_BUCKET_NAME=
 
 **Frontend `.env`**
 ```env
-VITE_API_URL=http://localhost:5000
-```
+http://myapp-dev-alb-2082196735.ap-south-1.elb.amazonaws.com/
+``
 
----
+##Author
 
-## 📸 Screenshots
-
-> _Add screenshots here_
-
-| Page | Description |
-|------|-------------|
-| `/` | Landing page |
-| `/auth` | Login / Register |
-| `/visit` | Visit request form |
-| `/dashboard` | Visitor dashboard |
-| `/pass/:id` | Digital visitor pass with QR |
-| `/admin` | Admin login |
-| `/admin/dashboard` | Admin overview |
-
----
-
-## 👤 Author
-
-**Thejas** — Full Stack Developer  
+Thejas A M 
 Building production systems on AWS with modern DevOps practices.
 
-[![GitHub](https://img.shields.io/badge/GitHub-Thejasam04-181717?style=flat&logo=github)](https://github.com/Thejasam04)
 
 ---
 
